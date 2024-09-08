@@ -82,7 +82,7 @@ const SideBar = () => {
               </li>
             ))}
           </ul>
-          <div className="support-box">
+          {/* <div className="support-box">
             <div className="media">
               <span>
                 <svg width="40" height="46" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@ const SideBar = () => {
                 Supports
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="copyright">
             <p>
               <strong>Fintch</strong> © <span className="current-year">{Latest.getFullYear()}</span> All Rights Reserved
