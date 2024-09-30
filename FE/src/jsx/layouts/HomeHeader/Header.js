@@ -23,7 +23,7 @@ const Header = () => {
             aria-label="homepage"
             className="Link__CustomLink-sc-1p80yfz-0 hDjhKH"
           >
-            <img src={logo_300x57_1} alt="" />
+            {/* <img src={logo_300x57_1} alt="" /> */}
             {/* <svg
               width={224}
               height={24}

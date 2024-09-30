@@ -4,7 +4,7 @@ import Login from "../jsx/pages/authentication/Login";
 import SignUp from "../jsx/pages/authentication/Registration";
 // import Login from "../jsx/pages/authentication/Test";
 import { AuthProvider, RequireAuth } from "react-auth-kit";
-import Home from "../jsx/pages/user/Home";
+import Home from "../jsx/pages/user/Home/Home.js";
 import ProfileEdit from "../jsx/pages/user/editProfile";
 import Stocks from "../jsx/pages/user/Stocks";
 import Account from "../jsx/pages/user/Account";
@@ -32,12 +32,15 @@ import AdminProfile from "../jsx/Admin/adminProfile";
 import FileUpload from "../jsx/Admin/fileUpload";
 import AddUser from "../jsx/Admin/AddUser";
 import UserDocs from "../jsx/Admin/SingleUser/UserDocs";
+import UseApplyBodyStyles from "./hookUpdate.js";
 export default function Router() {
   return (
     <AuthProvider authType={"localstorage"} authName={"auth"}>
       <BrowserRouter>
+
+        <UseApplyBodyStyles />
         <Routes>
-          <Route index path="/" element={<Login />} />{" "}
+          <Route index path="/" element={<Home />} />{" "}
           <Route path="auth/login" element={<Login />} />{" "}
           <Route path="/auth/signup" element={<SignUp />} />
 

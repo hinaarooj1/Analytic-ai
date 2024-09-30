@@ -97,7 +97,7 @@ const SideBar = (props) => {
               className="router-link-active router-link-exact-active flex items-center justify-center"
               aria-current="page"
             >
-              <img src={logo_300x57_1} />
+              {/* <img src={logo_300x57_1} /> */}
               {/* <svg
                 width={224}
                 height={24}
